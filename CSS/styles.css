@@ -1,0 +1,287 @@
+
+/* Base Element Styles */
+
+*{
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Varlera Round', sans-serif;
+    line-height: 1.3;
+    color:#3a3a3a;
+    background-color: #E0FFFF;
+}
+
+p{
+  font-size: 1em;
+  margin-bottom:2em;
+}
+
+h2,
+h3,
+a{
+  color: purple;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* Navigation BAr */
+
+.name {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.container{
+  width:70%;
+  margin: auto;
+}
+.container ul{
+  list-style: none;
+  padding: 0;
+}
+
+.main-nav a{
+  margin:0;
+}
+
+.name,
+.main-nav a{
+  text-align: center;
+  padding: 1rem;
+  display: block;
+}
+
+.main-nav a{
+  font-size: 1em;
+  color:  #3acec2;
+  text-transform: uppercase;
+}
+.main-nav a:hover{
+  color: green;
+}
+
+.main-nav li{
+  margin-top: 20px;
+  background-color: white;
+  border-radius:25px;
+}
+
+/* Images in the Portfolio */
+
+.photo{
+  max-width: 70%;
+}
+
+
+/* Layout Containers */
+
+.intro {
+  text-align: center;
+  margin: 3em;
+}
+
+.portfolio {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.col {
+  margin-top: 5em;
+}
+
+.contact{
+  text-align:center;
+  margin: 20px 6em;
+}
+
+.dan,
+.footer-nav li{
+  display: inline-block;
+}
+
+.footer-nav li{
+  text-align: left;
+  margin-left: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius:15px;
+  font-size: 0.7em;
+
+}
+
+.footer-nav{
+  margin:auto;
+  float: right;
+}
+.dan{
+  margin:auto;
+  padding:10px;
+  border-radius:25px;
+  background-color:white;
+  float:left;
+  font-size: 0.7em;
+}
+
+
+/* Media Queries */
+@media (max-width: 767px){
+
+    .name:hover{
+      text-transform: uppercase;
+    }
+
+  .footer-nav{
+    display:none;
+  }
+  .back{
+    display:inline-block;
+    float: right;
+    margin:auto;
+    padding:10px;
+    border-radius:25px;
+    background-color:white;
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 768px) {
+
+/* navigation bar for 768px or greater */
+  .name{
+    display:block;
+    font-size:1rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+  }
+  .name:hover{
+    transform: scale(1.5);
+    text-transform: uppercase;
+    transition: all.5s;
+  }
+  .main-nav a{
+    font-size:1rem;
+    display: inline-block;
+    float: left;
+    background-color: white;
+    min-width:25%;
+    text-align: center;
+
+  }
+.bar{
+  margin-left:20%;
+}
+
+/* maincontent for 768px or greater */
+  .face{
+    float: right;
+    padding-left:15px;
+  }
+
+  .intro{
+    background-color: lightgrey;
+    border-radius: 30px;
+  }
+  .intro p{
+    text-align: justify;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+.first,
+.third,
+.fifth{
+  float: left;
+  max-width:50%;
+}
+.second,
+.fourth,
+.sixth{
+  float: right;
+  max-width: 50%;
+}
+
+
+.footer-nav{
+  display: inline-block;
+  float: right;
+}
+
+.back{
+  display: none;
+}
+}
+
+.portfolio{
+  border-radius:20px;
+  max-width: 100vw;
+}
+/* For screens wider than 1024 */
+
+@media (min-width: 1024px) {
+
+  .name{
+    float:left;
+    display:inline-block;
+    font-size:1rem;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .main-nav a{
+    font-size:1rem;
+    display: inline-block;
+    float: right;
+    background-color: white;
+    text-align: right;
+    margin-left: 10px;
+  }
+
+  .first,
+  .second{
+    float: left;
+    width:33%;
+  }
+  .third,
+  .fourth{
+    float: right;
+    width:33%;
+  }
+  .fifth,
+  .sixth{
+    width:33%;
+  }
+
+/* clearfix */
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+
+}
+
+
+/* clearfix */
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
